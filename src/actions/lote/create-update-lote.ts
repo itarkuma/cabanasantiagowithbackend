@@ -86,6 +86,8 @@ export const createUpdateLote = async ( formData: FormData ) => {
     } );
 
     //Todo: RevalidatePaths
+
+    revalidatePath( '/' );
     revalidatePath( '/dashboard/lotes' );
     revalidatePath( `/dashboard/lote/${ lote.slug }` );
 
