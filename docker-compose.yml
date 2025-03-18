@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    user: "root"
+    image: postgres:15.3
+    restart: always
+    environment:
+      POSTGRES_USE: ${DB_USER}
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      PGDATA: "/var/lib/postgresql/data"
+    volumes:
+      - ${HOME}/bind_mount/postgres_cabanasantiago:/var/lib/postgresql/data
+    ports:
+      - 5432:5432

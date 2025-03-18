@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-trueGray-900;
+    background-image: url('/img/nosotros/cesped.png'); /* Ruta de la imagen */
+    background-repeat: repeat;
+    background-size: auto;
+  }
+  .verdeofi{
+    background-color:#002d11!important;
+  }
+  .verdeofic{
+    background-color:#003e2f!important;
+  }
+  .bg-pattern {
+    background-image: url('/img/nosotros/cesped.png'); /* Ruta de la imagen */
+    background-repeat: repeat;
+    background-size: auto;
+  }  
+  .bg-franjadorada{
+    background-image: url('/img/nosotros/barra_dorada.png'); /* Ruta de la imagen */
+    background-repeat: no-repeat;    
+    background-position: bottom;
+  }
+
+  #hero {
+    /* height:100vh; */
+    width:100%;
+    /* background:red; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+  
+  #hero::after {
+  width:100%;
+  height:100%;
+  content: '';
+  position:absolute;
+  z-index:10;
+  top:0;
+  left:0;
+  /* background:rgba(0,0,0,0.5) */
+  }
+  
+  #hero video {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:5;
+  object-fit:cover;
+  font-family:'object-fit: cover';
+  }
+  
+
+
+  #hero .texture {
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:15;
+  background:url('/img/nosotros/textura.png'); 
+  background-repeat: repeat;
+  }
+  
+  #hero .caption {  
+    position:relative;
+    z-index:20;
+    text-align:center;
+    color:#ffffff;
+  }
+  
+  .title{
+    animation-delay: 0.8s;
+  }  
+
+}
+
