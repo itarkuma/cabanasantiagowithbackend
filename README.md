@@ -10,6 +10,9 @@ npx prisma migrate deploy
 ```
 npm run seed 
 ```
+4. levantar el sitio web
+
+
 ## Development
 Pasos para levantar el desarrollo
 
