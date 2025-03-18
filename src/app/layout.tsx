@@ -15,7 +15,7 @@ const geistMono = localFont( {
 } );
 
 export const metadata: Metadata = {
-  title: "Ganaderia 360 - Sitio Web",
+  title: "Cabaña Santiago - Sitio Web",
   description: "Una tienda virtual de lotes de remates para la industria ganadera",
 };
 
