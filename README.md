@@ -1,9 +1,15 @@
 #Descripcion
 Sitigo web cabana santiago
 ## Deployment
-
-
-
+1. En el dashboard de vercel crear la base de datos, actualizamo el .env con las credenciales de la base de datos
+2. ejecutar el comando para que se cree las tablas
+```
+npx prisma migrate deploy
+```
+3. ejecutar el seed
+```
+npm run seed 
+```
 ## Development
 Pasos para levantar el desarrollo
 
