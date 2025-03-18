@@ -22,6 +22,9 @@ export default async function WebSitePage() {
   return (
     <>
       <VideoPortada videoId="v1739314362" />
+      <Container className="p-8 lg:pt-16" >
+        <LotesFront />
+      </Container>
       <Container className=" lg:bg-right lg:bg-no-repeat  lg:bg-cover w-full max-w-none lg:w-screen" >
         <div className="container max-w-8xl bg-franjadorada relative  text-white flex flex-wrap items-center justify-between mx-auto lg:justify-between xl:px-0" >
           <div className="w-full grid grid-cols-6 gap-6 text-center px-2 py-2 md:px-[50px] md:py-[80px]" >
@@ -84,9 +87,7 @@ export default async function WebSitePage() {
         <Benefits video={ true } imgPos="right" data={ nosotros } />
       </Container  >
 
-      <Container className="p-8 lg:pt-16" >
-        <LotesFront />
-      </Container>
+
 
       <Container className=" bg-black bg-opacity-20  lg:bg-cover w-full max-w-none lg:w-screen " >
 
